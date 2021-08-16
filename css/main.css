@@ -87,6 +87,176 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*=====================================
+   GLOBALS
+   =========================*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #004372;
+  min-width: 320px;
+}
+
+h1, h3, h4, h5, nav {
+  font-family: "Syne", sans-serif;
+}
+
+h1, h3, h4, nav {
+  text-transform: uppercase;
+}
+
+footer h3 {
+  text-transform: initial;
+}
+
+#hero, p, #email {
+  font-family: "Kameron", serif;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-bottom: solid 2px #fff;
+}
+
+h1 {
+  color: #fff;
+}
+
+#hero {
+  background: url("../img/hero.png") center no-repeat #333;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-text {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+  
+#hero-text h2 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 1px 3px #222;
+  padding: 10px 15px;
+  border: solid 2px #fff;
+  border-radius: 8px;
+  background-color: rgba(5, 5, 5, .7);
+  line-height: 28px;
+}
+
+#hero button {
+  color: #fff;
+  background-color: #004372;
+  font-family: 'Kameron', sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 3px #fff;
+  transition: .1s;
+}
+  
+#hero button:hover {
+  color: #004372;
+  background-color: #fff;
+  transition: .1s;
+}
+  
+#hero button:active {
+  background-color: #c9c9c9;
+}
+
+section {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: 90%;
+  justify-content: center;
+}
+
+#about {
+  background-color: #e6eef2;
+}
+
+#bio figure img {
+  width: 100%;
+  border: solid 2px #fff;
+  border-radius: 50%;
+}
+
+#skills {
+  background-color: #83c5d6;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+}
+
+/*==========================
+  MOBILE
+==========================*/
+
+header {
+  position: absolute;
+  top: 0;
+  background-color: #004372;
+  z-index: 10;
+}
+
+h1 {
+  margin: 0;
+  padding: 15px 0px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0 0 25px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  margin-top: 75px;
+}
+
+#hero {
+  padding: 30px 0;
+}
+
+#hero-text {
+  width: 300px;
+}
+
+.content-wrapper {
+  padding: 25px 0;
+}
+
+#bio figure {
+  width: 100px;
+  padding: 0;
+  margin: 15px;
+  float: left;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
