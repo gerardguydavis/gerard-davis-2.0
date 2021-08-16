@@ -188,7 +188,8 @@ section {
   justify-content: center;
 }
 
-#about {
+#about,
+#portfolio {
   background-color: #e6eef2;
 }
 
@@ -202,6 +203,35 @@ section {
   background-color: #83c5d6;
   border-top: solid 2px #fff;
   border-bottom: solid 2px #fff;
+  color: #fff;
+  text-align: center;
+}
+
+#skills h3, #skills h4, #skills h5 {
+  width: 100%;
+}
+
+#skills h4 {
+  padding-bottom: 3px;
+  border-bottom: solid 1px #fff;
+}
+
+#languages,
+#tools {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#languages figure,
+#tools figure {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100px;
+  margin: 0;
 }
 
 /*==========================
@@ -239,7 +269,7 @@ main {
 }
 
 #hero {
-  padding: 30px 0;
+  padding: 60px 0;
 }
 
 #hero-text {
@@ -253,8 +283,13 @@ main {
 #bio figure {
   width: 100px;
   padding: 0;
-  margin: 15px;
+  margin: 0 16px 0 0;
   float: left;
+}
+
+#skills img {
+  width: 75px;
+  max-height: 75px;
 }
 
 /* ==========================================================================
