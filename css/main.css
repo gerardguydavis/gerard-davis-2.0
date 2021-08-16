@@ -127,6 +127,11 @@ h1 {
   color: #fff;
 }
 
+h3 {
+  width: 100%;
+  text-align: center;
+}
+
 #hero {
   background: url("../img/hero.png") center no-repeat #333;
   background-size: cover;
@@ -207,13 +212,8 @@ section {
   text-align: center;
 }
 
-#skills h3, #skills h4, #skills h5 {
+#skills h5 {
   width: 100%;
-}
-
-#skills h4 {
-  padding-bottom: 3px;
-  border-bottom: solid 1px #fff;
 }
 
 #languages,
@@ -225,13 +225,47 @@ section {
   justify-content: center;
 }
 
-#languages figure,
-#tools figure {
+#languages {
+  border-bottom: solid 2px #fff;
+}
+
+#skills figure {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 100px;
-  margin: 0;
+}
+
+#portfolio a {
+  font-family: "Syne", sans-serif;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  border: solid 3px #000;
+  border-radius: 8px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+footer {
+  color: #fff;
+}
+
+#footer-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#email {
+  font-weight: bold;
+}
+
+#socials {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
 /*==========================
@@ -287,9 +321,46 @@ main {
   float: left;
 }
 
+#skills figure {
+  width: 100px;
+  margin: 5px;
+  line-height: 14px;
+}
+
+#skills h5 {
+margin-top: 14px;
+}
+
 #skills img {
   width: 75px;
   max-height: 75px;
+}
+
+footer {
+  padding: 40px 0;
+}
+
+footer h3 {
+  font-size: 24px;
+}
+
+footer img {
+  width: 50px;
+  padding: 0;
+}
+
+
+#email {
+  font-size: 20px;
+}
+
+#email img {
+  padding: 0 10px;
+}
+
+#socials {
+  width: 100%;
+  padding: 40px 0 0;
 }
 
 /* ==========================================================================
