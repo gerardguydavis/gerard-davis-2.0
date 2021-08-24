@@ -1,0 +1,19 @@
+$headerblue: #004372;
+$bodyblue: #83c5d6;
+$bodygrey: #e6eef2;
+$translucentblack: rgba(5, 5, 5, .7);
+$buttonclick: #c9c9c9;
+$syne: "Syne", sans-serif;
+$kameron: "Kameron", serif;
+$herobg: url("../img/hero.png") center no-repeat #333;
+$bodyborder: solid 2px #fff;
+
+%heading {
+    font-family: $syne;
+    text-transform: uppercase;
+}
+
+%center-flex {
+    display: flex;
+    justify-content: center;
+}

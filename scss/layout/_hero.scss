@@ -1,0 +1,58 @@
+@import '../helpers/variables';
+
+/*==========================
+  MOBILE
+==========================*/
+
+#hero {
+    @extend %center-flex;
+    align-items: center;
+    background: $herobg;
+    background-size: cover;
+    padding: 60px 0;
+    button {
+        color: #fff;
+        background-color: $headerblue;
+        font-family: $kameron;
+        font-weight: bold;
+        font-size: 1.25em;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+        border: solid 3px #fff;
+        transition: .1s;
+        &:hover {
+            color: $headerblue;
+            background-color: #fff;
+            transition: .1s;
+        }
+      } &:active {
+        background-color: $buttonclick;
+      }
+  }
+
+  #hero-text {
+    @extend %center-flex;
+    flex-flow: row wrap;
+    width: 300px;
+    h2 {
+        font-family: $kameron;
+        text-align: center;
+        line-height: 28px;
+        color: #fff;
+        text-shadow: 0px 1px 3px #222;
+        padding: 10px 15px;
+        border: $bodyborder;
+        border-radius: 8px;
+        background-color: rgba(5, 5, 5, .7);
+        margin-top: 0;
+    }
+}
+
+/*==========================
+  TABLET
+==========================*/
+
+/*==========================
+  DESKTOP
+==========================*/

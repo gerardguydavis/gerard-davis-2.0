@@ -1,0 +1,38 @@
+@import '../helpers/variables';
+
+/*==========================
+  MOBILE
+==========================*/
+
+header {
+    @extend %center-flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $headerblue;
+    z-index: 10;
+    border: {
+        bottom: $bodyborder;
+    }
+}
+
+h1 {
+    @extend %heading;
+    color: #fff;
+    margin: 0;
+    padding: 15px 0;
+}
+
+nav {
+    display: none;
+    font-family: $syne;
+    text-transform: uppercase;
+}
+
+/*==========================
+  TABLET
+==========================*/
+
+/*==========================
+  DESKTOP
+==========================*/

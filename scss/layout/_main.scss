@@ -1,0 +1,66 @@
+@import '../helpers/variables';
+
+/*==========================
+  MOBILE
+==========================*/
+
+html {
+    font-size: 16px;
+}
+  
+body {
+    background-color: #004372;
+    min-width: 320px;
+}
+
+main {
+    margin-top: 68px;
+}
+  
+h3, h4, h5 {
+    font-family: $syne;
+}
+  
+h3, h4 {
+    text-transform: uppercase;
+}
+  
+p {
+    font-family: $kameron;
+}
+  
+h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+}
+  
+h4 {
+    font-size: 18px;
+}
+  
+
+section {
+    @extend %center-flex;
+    flex-flow: row wrap;
+}
+ 
+.content-wrapper {
+   @extend %center-flex;
+   flex-flow: row wrap;
+   flex-basis: 90%;
+   padding: 25px 0;
+}
+ 
+#about,
+#portfolio {
+  background-color: $bodygrey;
+}
+
+/*==========================
+  TABLET
+==========================*/
+
+/*==========================
+  DESKTOP
+==========================*/

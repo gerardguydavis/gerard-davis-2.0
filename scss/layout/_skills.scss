@@ -1,0 +1,56 @@
+@import '../helpers/variables';
+
+/*==========================
+  MOBILE
+==========================*/
+
+#skills {
+    background-color: $bodyblue;
+    border: {
+        top: $bodyborder;
+        bottom: $bodyborder;
+    }
+    color: #fff;
+    text-align: center;
+    h3 {
+        padding-bottom: 0;
+    }
+    h4 {
+        margin: 25px 0;
+    }
+    h5 {
+        width: 100%;
+        margin: 11px 0 20px;
+    }
+
+    #languages,
+    #tools {
+    @extend %center-flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: baseline;
+    figure {
+        @extend %center-flex;
+        flex-flow: row wrap;
+        width: 100px;
+        margin: 2px 5px;
+        line-height: 14px;
+        img {
+            width: 60px;
+            max-height: 60px;
+        }
+    }
+    }
+
+    #languages {
+        border-bottom: $bodyborder;
+    }
+}
+
+/*==========================
+  TABLET
+==========================*/
+
+/*==========================
+  DESKTOP
+==========================*/
