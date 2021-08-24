@@ -29,6 +29,12 @@
     flex-flow: row wrap;
     width: 100%;
     align-items: baseline;
+    }
+
+    #languages {
+        border-bottom: $bodyborder;
+    }
+
     figure {
         @extend %center-flex;
         flex-flow: row wrap;
@@ -39,11 +45,9 @@
             width: 60px;
             max-height: 60px;
         }
-    }
-    }
-
-    #languages {
-        border-bottom: $bodyborder;
+        h5 {
+            font-family: $syne;
+        }
     }
 }
 

@@ -10,45 +10,46 @@ footer {
     color: #fff;
     padding: 40px 0;
     border-top: $bodyborder;
+}
 
-    #footer-wrapper {
-        @extend %center-flex;
-        flex-flow: row wrap;
+#footer-wrapper {
+    @extend %center-flex;
+    flex-flow: row wrap;
 
-        h3 {
-            text-transform: initial;
-        }
+    h3 {
+        text-transform: initial;
+    }
 
-        img {
-            width: 50px;
-        }
-
-        #contacts {
-            @extend %center-flex;
-            flex-flow: row wrap;
-        }
-          
-        #email {
-            display: flex;
-            font-family: $kameron;
-            font-weight: bold;
-            font-size: 20px;
-            width: 320px;
-            align-items: center;
-            img {
-                padding: 0 10px 0 0;
-            }
-        }
-          
-        #socials {
-            display: flex;
-            flex-flow: row;
-            justify-content: space-between;
-            width: 300px;
-            padding: 40px 0 0;
-        }
+    img {
+        width: 50px;
     }
 }
+
+#contacts {
+    @extend %center-flex;
+    flex-flow: row wrap;
+}
+  
+#email {
+    display: flex;
+    font-family: $kameron;
+    font-weight: bold;
+    font-size: 20px;
+    width: 320px;
+    align-items: center;
+    img {
+        padding: 0 10px 0 0;
+    }
+}
+  
+#socials {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 300px;
+    padding: 40px 0 0;
+}
+ 
 
 /*==========================
   TABLET

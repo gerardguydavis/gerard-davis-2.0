@@ -26,12 +26,14 @@
             background-color: #fff;
             transition: .1s;
         }
-      } &:active {
+        &:active {
         background-color: $buttonclick;
-      }
-  }
+        }
+    }
+}
 
-  #hero-text {
+
+#hero-text {
     @extend %center-flex;
     flex-flow: row wrap;
     width: 300px;
@@ -48,7 +50,6 @@
         margin-top: 0;
     }
 }
-
 /*==========================
   TABLET
 ==========================*/

@@ -3,9 +3,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills #languages figure,
-#skills #tools figure, #skills #languages,
-#skills #tools, .content-wrapper, section, #hero-text, #hero, header, footer #footer-wrapper #contacts, footer #footer-wrapper, footer {
+#skills figure, #skills #languages,
+#skills #tools, .content-wrapper, section, #hero-text, #hero, header, #contacts, #footer-wrapper, footer {
   display: flex;
   justify-content: center;
 }
@@ -24,6 +23,9 @@ h1 {
   border: solid 2px #fff;
   border-radius: 50%;
 }
+#bio p {
+  font-family: "Kameron", serif;
+}
 
 /*==========================
   TABLET
@@ -36,9 +38,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills #languages figure,
-#skills #tools figure, #skills #languages,
-#skills #tools, .content-wrapper, section, #hero-text, #hero, header, footer #footer-wrapper #contacts, footer #footer-wrapper, footer {
+#skills figure, #skills #languages,
+#skills #tools, .content-wrapper, section, #hero-text, #hero, header, #contacts, #footer-wrapper, footer {
   display: flex;
   justify-content: center;
 }
@@ -52,19 +53,22 @@ footer {
   padding: 40px 0;
   border-top: solid 2px #fff;
 }
-footer #footer-wrapper {
+
+#footer-wrapper {
   flex-flow: row wrap;
 }
-footer #footer-wrapper h3 {
+#footer-wrapper h3 {
   text-transform: initial;
 }
-footer #footer-wrapper img {
+#footer-wrapper img {
   width: 50px;
 }
-footer #footer-wrapper #contacts {
+
+#contacts {
   flex-flow: row wrap;
 }
-footer #footer-wrapper #email {
+
+#email {
   display: flex;
   font-family: "Kameron", serif;
   font-weight: bold;
@@ -72,10 +76,11 @@ footer #footer-wrapper #email {
   width: 320px;
   align-items: center;
 }
-footer #footer-wrapper #email img {
+#email img {
   padding: 0 10px 0 0;
 }
-footer #footer-wrapper #socials {
+
+#socials {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -94,9 +99,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills #languages figure,
-#skills #tools figure, #skills #languages,
-#skills #tools, .content-wrapper, section, #hero-text, #hero, header, footer, footer #footer-wrapper, footer #footer-wrapper #contacts {
+#skills figure, #skills #languages,
+#skills #tools, .content-wrapper, section, #hero-text, #hero, header, footer, #footer-wrapper, #contacts {
   display: flex;
   justify-content: center;
 }
@@ -136,9 +140,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills #languages figure,
-#skills #tools figure, #skills #languages,
-#skills #tools, .content-wrapper, section, #hero-text, #hero, footer, footer #footer-wrapper, footer #footer-wrapper #contacts, header {
+#skills figure, #skills #languages,
+#skills #tools, .content-wrapper, section, #hero-text, #hero, footer, #footer-wrapper, #contacts, header {
   display: flex;
   justify-content: center;
 }
@@ -169,7 +172,7 @@ h1 {
   background-color: #fff;
   transition: 0.1s;
 }
-#hero:active {
+#hero button:active {
   background-color: #c9c9c9;
 }
 
@@ -201,9 +204,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills #languages figure,
-#skills #tools figure, #skills #languages,
-#skills #tools, .content-wrapper, section, footer, footer #footer-wrapper, footer #footer-wrapper #contacts, header, #hero, #hero-text {
+#skills figure, #skills #languages,
+#skills #tools, .content-wrapper, section, footer, #footer-wrapper, #contacts, header, #hero, #hero-text {
   display: flex;
   justify-content: center;
 }
@@ -224,16 +226,9 @@ main {
   margin-top: 68px;
 }
 
-h3, h4, h5 {
-  font-family: "Syne", sans-serif;
-}
-
 h3, h4 {
+  font-family: "Syne", sans-serif;
   text-transform: uppercase;
-}
-
-p {
-  font-family: "Kameron", serif;
 }
 
 h3 {
@@ -272,9 +267,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills #languages figure,
-#skills #tools figure, #skills #languages,
-#skills #tools, footer, footer #footer-wrapper, footer #footer-wrapper #contacts, header, #hero, #hero-text, section, .content-wrapper {
+#skills figure, #skills #languages,
+#skills #tools, footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -306,9 +300,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills #languages figure,
-#skills #tools figure, #skills #languages,
-#skills #tools, footer, footer #footer-wrapper, footer #footer-wrapper #contacts, header, #hero, #hero-text, section, .content-wrapper {
+#skills figure, #skills #languages,
+#skills #tools, footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -339,20 +332,21 @@ h1 {
   width: 100%;
   align-items: baseline;
 }
-#skills #languages figure,
-#skills #tools figure {
+#skills #languages {
+  border-bottom: solid 2px #fff;
+}
+#skills figure {
   flex-flow: row wrap;
   width: 100px;
   margin: 2px 5px;
   line-height: 14px;
 }
-#skills #languages figure img,
-#skills #tools figure img {
+#skills figure img {
   width: 60px;
   max-height: 60px;
 }
-#skills #languages {
-  border-bottom: solid 2px #fff;
+#skills figure h5 {
+  font-family: "Syne", sans-serif;
 }
 
 /*==========================
@@ -366,9 +360,8 @@ h1 {
   text-transform: uppercase;
 }
 
-footer, footer #footer-wrapper, footer #footer-wrapper #contacts, header, #hero, #hero-text, section, .content-wrapper, #skills #languages,
-#skills #tools, #skills #languages figure,
-#skills #tools figure {
+footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper, #skills #languages,
+#skills #tools, #skills figure {
   display: flex;
   justify-content: center;
 }

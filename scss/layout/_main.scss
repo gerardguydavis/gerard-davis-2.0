@@ -17,16 +17,9 @@ main {
     margin-top: 68px;
 }
   
-h3, h4, h5 {
-    font-family: $syne;
-}
-  
 h3, h4 {
+    font-family: $syne;
     text-transform: uppercase;
-}
-  
-p {
-    font-family: $kameron;
 }
   
 h3 {
@@ -39,7 +32,6 @@ h4 {
     font-size: 18px;
 }
   
-
 section {
     @extend %center-flex;
     flex-flow: row wrap;
