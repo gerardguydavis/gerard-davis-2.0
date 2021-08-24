@@ -3,8 +3,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills figure, #skills #languages,
-#skills #tools, .content-wrapper, section, #hero-text, #hero, header, #contacts, #footer-wrapper, footer {
+.figure-wrap, #languages,
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #contacts, #footer-wrapper, footer {
   display: flex;
   justify-content: center;
 }
@@ -15,7 +15,7 @@ h1 {
 #bio figure {
   width: 100px;
   padding: 0;
-  margin: 0 16px 0 0;
+  margin: 16px 16px 0 0;
   float: left;
 }
 #bio figure img {
@@ -30,16 +30,37 @@ h1 {
 /*==========================
   TABLET
 ==========================*/
+@media only screen and (min-width: 768px) {
+  #bio {
+    width: 600px;
+  }
+}
 /*==========================
   DESKTOP
 ==========================*/
+@media only screen and (min-width: 1440px) {
+  #bio {
+    width: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  #bio figure {
+    width: 200px;
+    float: unset;
+    margin: 0 30px 0 0;
+  }
+  #bio p {
+    width: 500px;
+  }
+}
 h1 {
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
 }
 
-#skills figure, #skills #languages,
-#skills #tools, .content-wrapper, section, #hero-text, #hero, header, #contacts, #footer-wrapper, footer {
+.figure-wrap, #languages,
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #contacts, #footer-wrapper, footer {
   display: flex;
   justify-content: center;
 }
@@ -99,8 +120,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills figure, #skills #languages,
-#skills #tools, .content-wrapper, section, #hero-text, #hero, header, footer, #footer-wrapper, #contacts {
+.figure-wrap, #languages,
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, footer, #footer-wrapper, #contacts {
   display: flex;
   justify-content: center;
 }
@@ -175,7 +196,15 @@ nav ul a li {
 /*==========================
   DESKTOP
 ==========================*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
+  #header-wrapper {
+    width: 1440px;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
   nav ul li {
     width: 150px;
     font-size: 1em;
@@ -186,8 +215,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills figure, #skills #languages,
-#skills #tools, .content-wrapper, section, #hero-text, #hero, footer, #footer-wrapper, #contacts, header {
+.figure-wrap, #languages,
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, footer, #footer-wrapper, #contacts, header {
   display: flex;
   justify-content: center;
 }
@@ -201,7 +230,24 @@ h1 {
   background-size: cover;
   padding: 60px 0;
 }
-#hero button {
+
+#hero-text {
+  flex-flow: row wrap;
+  width: 300px;
+}
+#hero-text h2 {
+  font-family: "Kameron", serif;
+  text-align: center;
+  line-height: 1.75rem;
+  color: #fff;
+  text-shadow: 0px 1px 3px #222;
+  padding: 10px 15px;
+  border: solid 2px #fff;
+  border-radius: 8px;
+  background-color: rgba(5, 5, 5, 0.7);
+  margin-top: 0;
+}
+#hero-text button {
   color: #fff;
   background-color: #004372;
   font-family: "Kameron", serif;
@@ -213,45 +259,52 @@ h1 {
   border: solid 3px #fff;
   transition: 0.1s;
 }
-#hero button:hover {
+#hero-text button:hover {
   color: #004372;
   background-color: #fff;
   transition: 0.1s;
 }
-#hero button:active {
+#hero-text button:active {
   background-color: #c9c9c9;
-}
-
-#hero-text {
-  flex-flow: row wrap;
-  width: 300px;
-}
-#hero-text h2 {
-  font-family: "Kameron", serif;
-  text-align: center;
-  line-height: 28px;
-  color: #fff;
-  text-shadow: 0px 1px 3px #222;
-  padding: 10px 15px;
-  border: solid 2px #fff;
-  border-radius: 8px;
-  background-color: rgba(5, 5, 5, 0.7);
-  margin-top: 0;
 }
 
 /*==========================
   TABLET
 ==========================*/
+@media only screen and (min-width: 768px) {
+  #hero-text {
+    flex-basis: 425px;
+  }
+  #hero-text h2 {
+    font-size: 2.175em;
+    font-weight: 700;
+    line-height: 2.225rem;
+    padding: 20px;
+  }
+  #hero-text button {
+    font-size: 1.5em;
+    width: 200px;
+  }
+}
 /*==========================
   DESKTOP
 ==========================*/
+@media only screen and (min-width: 1440px) {
+  #hero {
+    padding: 175px 0;
+  }
+
+  #hero-text {
+    flex-basis: 650px;
+  }
+}
 h1 {
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
 }
 
-#skills figure, #skills #languages,
-#skills #tools, .content-wrapper, section, footer, #footer-wrapper, #contacts, header, #hero, #hero-text {
+.figure-wrap, #languages,
+#tools, #skills figure, .content-wrapper, section, footer, #footer-wrapper, #contacts, header, #hero, #hero-text {
   display: flex;
   justify-content: center;
 }
@@ -313,8 +366,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills figure, #skills #languages,
-#skills #tools, footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper {
+.figure-wrap, #languages,
+#tools, #skills figure, footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -346,8 +399,8 @@ h1 {
   text-transform: uppercase;
 }
 
-#skills figure, #skills #languages,
-#skills #tools, footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper {
+.figure-wrap, #languages,
+#tools, #skills figure, footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -367,19 +420,11 @@ h1 {
 }
 #skills h4 {
   margin: 25px 0;
+  width: 100%;
 }
 #skills h5 {
   width: 100%;
   margin: 11px 0 20px;
-}
-#skills #languages,
-#skills #tools {
-  flex-flow: row wrap;
-  width: 100%;
-  align-items: baseline;
-}
-#skills #languages {
-  border-bottom: solid 2px #fff;
 }
 #skills figure {
   flex-flow: row wrap;
@@ -395,19 +440,81 @@ h1 {
   font-family: "Syne", sans-serif;
 }
 
+#languages,
+#tools {
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: baseline;
+}
+
+#languages {
+  border-bottom: solid 2px #fff;
+}
+
+.figure-wrap {
+  flex-flow: row wrap;
+  width: 100%;
+}
+
 /*==========================
   TABLET
 ==========================*/
+@media only screen and (min-width: 768px) {
+  #skills h4 {
+    width: 100%;
+  }
+  #skills figure {
+    width: 125px;
+    line-height: 1em;
+  }
+  #skills figure img {
+    width: 90px;
+    max-height: 90px;
+  }
+  #skills figure h5 {
+    font-size: 1em;
+  }
+
+  #languages {
+    width: 700px;
+  }
+
+  #tools {
+    width: 600px;
+  }
+}
 /*==========================
   DESKTOP
 ==========================*/
+@media only screen and (min-width: 1440px) {
+  #skills figure {
+    margin: 2px 10px;
+  }
+  #skills figure img {
+    width: 100px;
+    max-height: 100px;
+  }
+
+  #languages,
+#tools {
+    width: 650px;
+    padding-bottom: 25px;
+  }
+
+  #languages {
+    border: none;
+  }
+  #languages .figure-wrap {
+    border-right: solid 2px #fff;
+  }
+}
 h1 {
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
 }
 
-footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper, #skills #languages,
-#skills #tools, #skills figure {
+footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
+#tools, .figure-wrap {
   display: flex;
   justify-content: center;
 }

@@ -17,22 +17,11 @@
     }
     h4 {
         margin: 25px 0;
+        width: 100%;
     }
     h5 {
         width: 100%;
         margin: 11px 0 20px;
-    }
-
-    #languages,
-    #tools {
-    @extend %center-flex;
-    flex-flow: row wrap;
-    width: 100%;
-    align-items: baseline;
-    }
-
-    #languages {
-        border-bottom: $bodyborder;
     }
 
     figure {
@@ -51,10 +40,80 @@
     }
 }
 
+#languages,
+#tools {
+@extend %center-flex;
+flex-flow: row wrap;
+width: 100%;
+align-items: baseline;
+}
+
+#languages {
+    border-bottom: $bodyborder;
+}
+
+.figure-wrap {
+    @extend %center-flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
 /*==========================
   TABLET
 ==========================*/
 
+@media only screen and (min-width: 768px) {
+    #skills {
+        h4 {
+            width: 100%;
+        }
+        figure {
+            width: 125px;
+            line-height: 1em;
+            img {
+                width: 90px;
+                max-height: 90px;
+            }
+            h5 {
+                font-size: 1em;
+            }
+        }
+    }
+
+    #languages {
+        width: 700px;
+    }
+
+    #tools {
+        width: 600px;
+    }
+}
+
 /*==========================
   DESKTOP
 ==========================*/
+
+@media only screen and (min-width: 1440px) {
+    #skills {
+        figure {
+            margin: 2px 10px;
+            img {
+                width: 100px;
+                max-height: 100px;
+            }
+        }
+    }
+
+    #languages,
+    #tools {
+        width: 650px;
+        padding-bottom: 25px;
+    }
+
+    #languages {
+        border: none;
+        .figure-wrap {
+            border-right: $bodyborder;
+        }
+    }
+}
