@@ -127,14 +127,60 @@ nav {
   display: none;
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
+}
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul a li {
+  list-style: none;
 }
 
 /*==========================
   TABLET
 ==========================*/
+@media only screen and (min-width: 768px) {
+  #header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+  }
+
+  h1 {
+    margin: 0 15px;
+  }
+
+  nav {
+    display: block;
+  }
+  nav ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    width: 125px;
+    padding: 30px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 0.9em;
+  }
+  nav ul li:hover {
+    background-color: #112e52;
+    transition: 0.2s;
+  }
+}
 /*==========================
   DESKTOP
 ==========================*/
+@media only screen and (min-width: 768px) {
+  nav ul li {
+    width: 150px;
+    font-size: 1em;
+  }
+}
 h1 {
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
