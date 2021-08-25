@@ -1,0 +1,74 @@
+$total: 6;
+
+
+#portfolio-page {
+    @extend %center-flex;
+    background-color: $bodygrey;
+    .content-wrapper {
+        flex-basis: 100%;
+        padding-bottom: 0;
+    }
+    h2 {
+        font-family: $syne;
+        text-transform: uppercase;
+        margin: 0 0 10px;
+    }
+    @for $i from 1 through $total {
+        a:nth-child(#{$i}) {
+            background-color: if($i % 2 == 0, $portfolio2, $bodygrey)
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #222;
+        padding: 20px 0 0;
+        border-bottom: $bodyborder;
+        display: flex;
+        justify-content: center;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        &:last-of-type {
+            border-bottom: none;
+        }
+        &:hover {
+            background-color: $portfoliohover;
+            h3 {
+                text-decoration: underline;
+            }
+        }
+    }
+    article {
+        @extend %center-flex;
+        flex-flow: row wrap;
+        width: 90%;
+    }
+
+}
+
+.portfolio-screenshot {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+.portfolio-text {
+    width: 100%;
+    h3 {
+        text-transform: none;
+        }
+    p {
+        font-family: $kameron;
+        strong {
+            font-family: $syne;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}

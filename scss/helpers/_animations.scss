@@ -3,6 +3,10 @@
     animation: open .75s ease-in-out;
 }
 
+.fade {
+    animation: fade .5s both;
+}
+
 @keyframes open {
     from {
         width: 0;
@@ -17,6 +21,16 @@
         height: 543px;
     }
 }
+
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
 
 @media only screen and (min-width: 768px) {
     

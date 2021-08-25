@@ -19,10 +19,13 @@
     z-index: 20;
     padding: 10px;
     width: 275px;
-    font-family: 'syne', sans-serif;
+    font-family: $syne;
     h2, p {
         text-align: center;
         flex-basis: 100%;
+    }
+    p {
+        font-size: 1.25em;
     }
     h5 {
         margin: 15px 0 0;
@@ -30,6 +33,12 @@
     }
     a {
         color: #222;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     ::-webkit-scrollbar {
         width: 5px;
@@ -69,7 +78,7 @@ input[name=email] {
   
 input,
 textarea {
-    font-family: 'Kameron', serif;
+    font-family: $kameron;
 }
   
 textarea {
@@ -84,12 +93,14 @@ input[type=submit] {
     padding: 15px 0;
     color: #fff;
     background-color: #004372;
-    font-family: 'syne', sans-serif;
-    font-weight: bold;
     border-radius: 5px;
     border: solid 3px #fff;
     transition: .1s;
     text-transform: uppercase;
+    font : {
+        family: $syne;
+        weight: 700;
+    }
     &:hover {
         color: #004372;
         background-color: #fff;
@@ -106,12 +117,10 @@ input[type=submit] {
     top: 0;
     right: 0;
     width: 20px;
-    font-size: 20px;
     padding: 3px;
     text-align: center;
     margin: 3px;
     font-family: 'syne', sans-serif;
-    font-size: 1.5em;
     border-radius: 5px;
     transition: .1s;
     -webkit-touch-callout: none;
@@ -120,6 +129,11 @@ input[type=submit] {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font : {
+        family: $syne;
+        size: 1.25em;
+    }
+
     &:hover {
         background-color: #333;
         color: #fff;
@@ -146,7 +160,7 @@ input[type=submit] {
       }
 
       .contact-info-wrap {
-          justify-content: space-between;
+        justify-content: space-between;
       }
       
       .popup-contact {

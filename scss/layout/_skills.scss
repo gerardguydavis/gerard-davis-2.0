@@ -49,12 +49,20 @@ width: 100%;
 
 #languages {
     border-bottom: $bodyborder;
+    .figure-wrap {
+        width: 350px;
+    }
+}
+
+#tools {
+    .figure-wrap {
+        max-width: 500px;
+    }
 }
 
 .figure-wrap {
     @extend %center-flex;
     flex-flow: row wrap;
-    width: 100%;
     align-items: baseline;
 }
 
@@ -81,10 +89,16 @@ width: 100%;
 
     #languages {
         width: 700px;
+        .figure-wrap {
+            width: 100%;
+        }
     }
 
     #tools {
         width: 600px;
+        .figure-wrap {
+            max-width: 100%;
+        }
     }
 }
 
