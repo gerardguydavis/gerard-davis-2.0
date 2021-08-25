@@ -30,7 +30,7 @@
 <body>
   <header>
     <div id="header-wrapper">
-      <h1>Gerard Davis</h1>
+      <h1><a href="https://gerarddavis.com">Gerard Davis</a></h1>
       <nav>
         <ul>
           <a href="#about">
@@ -50,8 +50,43 @@
     <div id="hero">
       <div id="hero-text">
         <h2>Hi! I'm Gerard, a front-end developer based in Syracuse, NY.</h2>
-        <button>Let's talk!</button>
+        <button class="contact-button">Let's talk!</button>
       </div>
+    </div>
+    <div class="popup hide">
+      <form action="https://formsubmit.co/gerard@gerarddavis.com" method="POST">
+        <span class="close">X</span>
+        <h2>Let's talk!</h2>
+        <p>Feel free to contact me with the sterile but obligatory form below, or send an email to <a
+            href="mailto:gerard@gerarddavis.com">gerard@gerarddavis.com</a>.</p>
+        <div class="popup-form">
+          <div class="contact-info-wrap">
+            <div class="popup-contact">
+              <label for="name">
+                <h5 class="form-heading">Name</h5>
+              </label>
+              <input type="text" placeholder="Name" name="name" required>
+            </div>
+
+            <div class="popup-contact">
+              <label for="email">
+                <h5 class="form-heading">Email Address</h5>
+              </label>
+              <input type="text" placeholder="Email Address" name="email" required>
+            </div>
+          </div>
+
+          <div class="popup-message">
+            <label for="message">
+              <h5 class="form-heading">Message</h5>
+            </label>
+            <textarea placeholder="" name="message" required></textarea>
+          </div>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://gerarddavis.com/thankyou">
+          <input type="submit" value="Send" target="_blank">
+        </div>
+      </form>
     </div>
     <section id="about">
       <div class="content-wrapper">
@@ -257,6 +292,7 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
+  <script src="js/main.js"></script>
   <script src="js/carousel.js"></script>
 </body>
 

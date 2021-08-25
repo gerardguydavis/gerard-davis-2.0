@@ -30,13 +30,14 @@
     flex-flow: row wrap;
     width: 50%;
     padding: 10px 30px;
-    align-items:baseline;
     h4 {
         text-transform: initial;
+        font-size: 1.5em;
         margin: 0;
     }
     p {
         height: 200px;
+        vertical-align: middle;
         font : {
             family: $kameron;
         }
@@ -48,6 +49,20 @@
     }
     a {
         height: 20px;
+        font-family: $syne;
+        color: #000;
+        text-decoration: none;
+        background-color: #fff;
+        border: solid 3px #000;
+        border-radius: 8px;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        font-weight: 700;
+        font-size: 1.2em;
+        &:hover {
+          background-color: $buttonclick;
+          transition: .2s;
+        }
     }
 }
 
@@ -71,6 +86,10 @@
    }
 }
 
+.prevBtn {
+    left: -30px;
+}
+
 .nextBtn {
-  right: 0;
+  right: -30px;
 }

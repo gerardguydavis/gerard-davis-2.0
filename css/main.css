@@ -4,7 +4,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #footer-wrapper, footer {
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #footer-wrapper, footer, .popup-form {
   display: flex;
   justify-content: center;
 }
@@ -60,7 +60,185 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #footer-wrapper, footer {
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #footer-wrapper, footer, .popup-form {
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #e6eef2;
+  border: solid 3px #004372;
+  border-radius: 10px;
+  z-index: 20;
+  padding: 10px;
+  width: 275px;
+  font-family: "syne", sans-serif;
+}
+.popup h2, .popup p {
+  text-align: center;
+  flex-basis: 100%;
+}
+.popup h5 {
+  margin: 15px 0 0;
+  font-size: 0.875em;
+}
+.popup a {
+  color: #222;
+}
+.popup ::-webkit-scrollbar {
+  width: 5px;
+}
+.popup ::-webkit-scrollbar-track {
+  background: #fff;
+}
+.popup ::-webkit-scrollbar-thumb {
+  background: #c9c9c9;
+  border-radius: 8px;
+}
+
+.popup-form {
+  width: 260px;
+  flex-flow: row wrap;
+}
+
+.contact-info-wrap {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.popup-contact,
+.popup-message {
+  width: 100%;
+  justify-content: center;
+}
+
+input[name=name],
+input[name=email] {
+  width: 100%;
+}
+
+input,
+textarea {
+  font-family: "Kameron", serif;
+}
+
+textarea {
+  height: 200px;
+  width: 100%;
+  overflow-y: scroll;
+  resize: none;
+}
+
+input[type=submit] {
+  width: 150px;
+  padding: 15px 0;
+  color: #fff;
+  background-color: #004372;
+  font-family: "syne", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid 3px #fff;
+  transition: 0.1s;
+  text-transform: uppercase;
+}
+input[type=submit]:hover {
+  color: #004372;
+  background-color: #fff;
+  transition: 0.1s;
+  cursor: pointer;
+}
+input[type=submit]:active {
+  background-color: #c9c9c9;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  font-size: 20px;
+  padding: 3px;
+  text-align: center;
+  margin: 3px;
+  font-family: "syne", sans-serif;
+  font-size: 1.5em;
+  border-radius: 5px;
+  transition: 0.1s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.close:hover {
+  background-color: #333;
+  color: #fff;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.close:active {
+  background-color: #555;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .popup {
+    padding: 50px;
+    width: 600px;
+  }
+  .popup h5 {
+    font-size: 1em;
+  }
+
+  .popup-form {
+    width: 100%;
+  }
+
+  .contact-info-wrap {
+    justify-content: space-between;
+  }
+
+  .popup-contact {
+    width: 48%;
+  }
+
+  input[name=name],
+input[name=email] {
+    width: 100%;
+  }
+
+  textarea {
+    height: 300px;
+    width: 100%;
+  }
+
+  input[type=submit] {
+    width: 200px;
+    padding: 15px 0;
+  }
+}
+h1 {
+  font-family: "Syne", sans-serif;
+  text-transform: uppercase;
+}
+
+.figure-wrap, #languages,
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #footer-wrapper, footer, .popup-form {
   display: flex;
   justify-content: center;
 }
@@ -103,6 +281,12 @@ footer {
   font-size: 20px;
   width: 100%;
   align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #email img {
   padding: 0 10px 0 0;
@@ -162,7 +346,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, footer, #footer-wrapper {
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, .popup-form, footer, #footer-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -262,7 +446,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, footer, #footer-wrapper, header {
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, .popup-form, footer, #footer-wrapper, header {
   display: flex;
   justify-content: center;
 }
@@ -353,7 +537,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, footer, #footer-wrapper, header, #hero, #hero-text {
+#tools, #skills figure, .content-wrapper, section, .popup-form, footer, #footer-wrapper, header, #hero, #hero-text {
   display: flex;
   justify-content: center;
 }
@@ -404,6 +588,10 @@ section {
   background-color: #e6eef2;
 }
 
+.hide {
+  display: none;
+}
+
 /*==========================
   TABLET
 ==========================*/
@@ -416,7 +604,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper {
+#tools, #skills figure, .popup-form, footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -424,23 +612,6 @@ h1 {
 /*==========================
   MOBILE
 ==========================*/
-.carousel-text a {
-  font-family: "Syne", sans-serif;
-  color: #000;
-  text-decoration: none;
-  background-color: #fff;
-  border: solid 3px #000;
-  border-radius: 8px;
-  text-transform: uppercase;
-  padding: 15px 20px;
-  font-weight: 700;
-  font-size: 1.2em;
-}
-.carousel-text a:hover {
-  background-color: #c9c9c9;
-  transition: 0.2s;
-}
-
 /*==========================
   TABLET
 ==========================*/
@@ -453,7 +624,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper {
+#tools, #skills figure, .popup-form, footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -564,7 +735,7 @@ h1 {
   text-transform: uppercase;
 }
 
-footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
+.popup-form, footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
 #tools, .figure-wrap {
   display: flex;
   justify-content: center;
@@ -594,7 +765,7 @@ h1 {
   text-transform: uppercase;
 }
 
-footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
+.popup-form, footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
 #tools, .figure-wrap {
   display: flex;
   justify-content: center;
@@ -630,14 +801,15 @@ footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #
   flex-flow: row wrap;
   width: 50%;
   padding: 10px 30px;
-  align-items: baseline;
 }
 .carousel-text h4 {
   text-transform: initial;
+  font-size: 1.5em;
   margin: 0;
 }
 .carousel-text p {
   height: 200px;
+  vertical-align: middle;
   font-family: "Kameron", serif;
 }
 .carousel-text p strong {
@@ -645,6 +817,20 @@ footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #
 }
 .carousel-text a {
   height: 20px;
+  font-family: "Syne", sans-serif;
+  color: #000;
+  text-decoration: none;
+  background-color: #fff;
+  border: solid 3px #000;
+  border-radius: 8px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.carousel-text a:hover {
+  background-color: #c9c9c9;
+  transition: 0.2s;
 }
 
 .prevBtn,
@@ -668,16 +854,50 @@ footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #
   transition: 0.6s;
 }
 
-.nextBtn {
-  right: 0;
+.prevBtn {
+  left: -30px;
 }
 
+.nextBtn {
+  right: -30px;
+}
+
+.open {
+  animation: open 0.75s ease-in-out;
+}
+
+@keyframes open {
+  from {
+    width: 0;
+    height: 0;
+  }
+  10% {
+    width: 275px;
+  }
+  to {
+    height: 543px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  @keyframes open {
+    from {
+      width: 0;
+      height: 0;
+    }
+    10% {
+      width: 600px;
+    }
+    to {
+      height: 573px;
+    }
+  }
+}
 h1 {
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
 }
 
-footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
+.popup-form, footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
 #tools, .figure-wrap {
   display: flex;
   justify-content: center;
