@@ -4,7 +4,7 @@
   MOBILE
 ==========================*/
 
-#portfolio {
+.carousel-text {
     a {
         font-family: $syne;
         color: #000;
@@ -16,6 +16,10 @@
         padding: 15px 20px;
         font-weight: 700;
         font-size: 1.2em;
+        &:hover {
+          background-color: $buttonclick;
+          transition: .2s;
+        }
     }
 }
 

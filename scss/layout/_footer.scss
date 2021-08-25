@@ -11,6 +11,7 @@ footer {
     color: #fff;
     padding: 40px 0;
     border-top: $bodyborder;
+    background-color: $headerblue;
 }
 
 #footer-wrapper {
@@ -19,6 +20,7 @@ footer {
 
     h3 {
         text-transform: initial;
+        margin: 0;
     }
 
     img {
@@ -30,14 +32,16 @@ footer {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    margin: 25px 0 0;
 }
   
 #email {
     display: flex;
     font-family: $kameron;
+    justify-content: center;
     font-weight: bold;
     font-size: 20px;
-    width: 320px;
+    width: 100%;
     align-items: center;
     img {
         padding: 0 10px 0 0;
@@ -64,8 +68,8 @@ footer {
     #contacts {
         width: 100%;
         justify-content: space-between;
-        padding: 20px 0 0;
         #email {
+            width: 320px;
             transition: .2s;
             &:hover {
                 transform: scale(1.1);

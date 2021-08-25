@@ -74,6 +74,7 @@ footer {
   color: #fff;
   padding: 40px 0;
   border-top: solid 2px #fff;
+  background-color: #004372;
 }
 
 #footer-wrapper {
@@ -81,6 +82,7 @@ footer {
 }
 #footer-wrapper h3 {
   text-transform: initial;
+  margin: 0;
 }
 #footer-wrapper img {
   width: 50px;
@@ -90,14 +92,16 @@ footer {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  margin: 25px 0 0;
 }
 
 #email {
   display: flex;
   font-family: "Kameron", serif;
+  justify-content: center;
   font-weight: bold;
   font-size: 20px;
-  width: 320px;
+  width: 100%;
   align-items: center;
 }
 #email img {
@@ -123,9 +127,9 @@ footer {
   #contacts {
     width: 100%;
     justify-content: space-between;
-    padding: 20px 0 0;
   }
   #contacts #email {
+    width: 320px;
     transition: 0.2s;
   }
   #contacts #email:hover {
@@ -179,6 +183,11 @@ h1 {
   color: #fff;
   margin: 0;
   padding: 15px 0;
+}
+
+h1 a {
+  color: #fff;
+  text-decoration: none;
 }
 
 nav {
@@ -332,7 +341,7 @@ h1 {
   }
 
   #hero-text {
-    flex-basis: 650px;
+    flex-basis: 725px;
   }
   #hero-text h2 {
     padding: 30px;
@@ -415,7 +424,7 @@ h1 {
 /*==========================
   MOBILE
 ==========================*/
-#portfolio a {
+.carousel-text a {
   font-family: "Syne", sans-serif;
   color: #000;
   text-decoration: none;
@@ -426,6 +435,10 @@ h1 {
   padding: 15px 20px;
   font-weight: 700;
   font-size: 1.2em;
+}
+.carousel-text a:hover {
+  background-color: #c9c9c9;
+  transition: 0.2s;
 }
 
 /*==========================
@@ -546,6 +559,119 @@ h1 {
     margin: 2px 20px;
   }
 }
+h1 {
+  font-family: "Syne", sans-serif;
+  text-transform: uppercase;
+}
+
+footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
+#tools, .figure-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+#thankyou {
+  background-color: #e6eef2;
+  height: 72vh;
+}
+#thankyou h1 {
+  color: #000;
+  width: 100%;
+  text-align: center;
+  margin-top: 12%;
+}
+#thankyou p {
+  font-family: "Kameron", serif;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0 10%;
+  margin-bottom: 25%;
+}
+
+h1 {
+  font-family: "Syne", sans-serif;
+  text-transform: uppercase;
+}
+
+footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
+#tools, .figure-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-wrapper {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row;
+  border-radius: 15px;
+  height: 350px;
+  overflow: hidden;
+  background-color: rgba(131, 197, 214, 0.6);
+}
+.carousel-slide figure {
+  width: 40%;
+  margin: 0;
+}
+.carousel-slide figure img {
+  width: 100%;
+  top: 0;
+}
+
+.carousel-text {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  padding: 10px 30px;
+  align-items: baseline;
+}
+.carousel-text h4 {
+  text-transform: initial;
+  margin: 0;
+}
+.carousel-text p {
+  height: 200px;
+  font-family: "Kameron", serif;
+}
+.carousel-text p strong {
+  font-family: "Syne", sans-serif;
+}
+.carousel-text a {
+  height: 20px;
+}
+
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 10px;
+  background-color: rgba(230, 238, 242, 0.6);
+  color: #004372;
+  font-weight: bolder;
+  font-size: 18px;
+  transition: 0.6s;
+}
+.prevBtn:hover,
+.nextBtn:hover {
+  cursor: pointer;
+  background-color: #004372;
+  color: #e6eef2;
+  transition: 0.6s;
+}
+
+.nextBtn {
+  right: 0;
+}
+
 h1 {
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
