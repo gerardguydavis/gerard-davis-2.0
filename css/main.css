@@ -4,7 +4,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #contacts, #footer-wrapper, footer {
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #footer-wrapper, footer {
   display: flex;
   justify-content: center;
 }
@@ -60,7 +60,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #contacts, #footer-wrapper, footer {
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, #footer-wrapper, footer {
   display: flex;
   justify-content: center;
 }
@@ -69,6 +69,7 @@ h1 {
   MOBILE
 ==========================*/
 footer {
+  width: 100%;
   flex-flow: row wrap;
   color: #fff;
   padding: 40px 0;
@@ -86,6 +87,8 @@ footer {
 }
 
 #contacts {
+  display: flex;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
@@ -112,16 +115,50 @@ footer {
 /*==========================
   TABLET
 ==========================*/
+@media only screen and (min-width: 768px) {
+  #footer-wrapper {
+    width: 700px;
+  }
+
+  #contacts {
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0 0;
+  }
+  #contacts #email {
+    transition: 0.2s;
+  }
+  #contacts #email:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
+
+  #socials {
+    padding: 0;
+  }
+  #socials a {
+    transition: 0.2s;
+  }
+  #socials a:hover {
+    transform: scale(1.15);
+    transition: 0.2s;
+  }
+}
 /*==========================
   DESKTOP
 ==========================*/
+@media only screen and (min-width: 1440px) {
+  #footer-wrapper {
+    width: 800px;
+  }
+}
 h1 {
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, footer, #footer-wrapper, #contacts {
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, header, footer, #footer-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -216,7 +253,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, footer, #footer-wrapper, #contacts, header {
+#tools, #skills figure, .content-wrapper, section, #hero-text, #hero, footer, #footer-wrapper, header {
   display: flex;
   justify-content: center;
 }
@@ -297,6 +334,9 @@ h1 {
   #hero-text {
     flex-basis: 650px;
   }
+  #hero-text h2 {
+    padding: 30px;
+  }
 }
 h1 {
   font-family: "Syne", sans-serif;
@@ -304,7 +344,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, .content-wrapper, section, footer, #footer-wrapper, #contacts, header, #hero, #hero-text {
+#tools, #skills figure, .content-wrapper, section, footer, #footer-wrapper, header, #hero, #hero-text {
   display: flex;
   justify-content: center;
 }
@@ -367,7 +407,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper {
+#tools, #skills figure, footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -400,7 +440,7 @@ h1 {
 }
 
 .figure-wrap, #languages,
-#tools, #skills figure, footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper {
+#tools, #skills figure, footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -429,12 +469,12 @@ h1 {
 #skills figure {
   flex-flow: row wrap;
   width: 100px;
+  min-height: 100px;
   margin: 2px 5px;
   line-height: 14px;
 }
 #skills figure img {
-  width: 60px;
-  max-height: 60px;
+  height: 60px;
 }
 #skills figure h5 {
   font-family: "Syne", sans-serif;
@@ -444,7 +484,6 @@ h1 {
 #tools {
   flex-flow: row wrap;
   width: 100%;
-  align-items: baseline;
 }
 
 #languages {
@@ -454,6 +493,7 @@ h1 {
 .figure-wrap {
   flex-flow: row wrap;
   width: 100%;
+  align-items: baseline;
 }
 
 /*==========================
@@ -468,8 +508,7 @@ h1 {
     line-height: 1em;
   }
   #skills figure img {
-    width: 90px;
-    max-height: 90px;
+    height: 90px;
   }
   #skills figure h5 {
     font-size: 1em;
@@ -490,10 +529,6 @@ h1 {
   #skills figure {
     margin: 2px 10px;
   }
-  #skills figure img {
-    width: 100px;
-    max-height: 100px;
-  }
 
   #languages,
 #tools {
@@ -507,13 +542,16 @@ h1 {
   #languages .figure-wrap {
     border-right: solid 2px #fff;
   }
+  #languages figure {
+    margin: 2px 20px;
+  }
 }
 h1 {
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
 }
 
-footer, #footer-wrapper, #contacts, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
+footer, #footer-wrapper, header, #hero, #hero-text, section, .content-wrapper, #skills figure, #languages,
 #tools, .figure-wrap {
   display: flex;
   justify-content: center;
