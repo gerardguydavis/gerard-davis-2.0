@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gerard Davis | Front-End Developer</title>
+    <title>Gerard Davis | Portfolio</title>
     <meta name="description" content="Gerard Davis is a front-end developer based in Syracuse, NY.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,7 +39,7 @@
                     <a href="https://gerarddavis.com/portfolio">
                         <li>Portfolio</li>
                     </a>
-                    <a href="">
+                    <a href="#contact">
                         <li>Contact</li>
                     </a>
                 </ul>
@@ -47,7 +47,41 @@
         </div>
     </header>
     <main>
+        <div class="popup hide">
+            <form action="https://formsubmit.co/gerard@gerarddavis.com" method="POST">
+                <span class="close">X</span>
+                <h2>Let's talk!</h2>
+                <p>Feel free to contact me with the sterile but obligatory form below, or send an email to <a
+                        href="mailto:gerard@gerarddavis.com">gerard@gerarddavis.com</a>.</p>
+                <div class="popup-form">
+                    <div class="contact-info-wrap">
+                        <div class="popup-contact">
+                            <label for="name">
+                                <h5 class="form-heading">Name</h5>
+                            </label>
+                            <input type="text" placeholder="Name" name="name" required>
+                        </div>
 
+                        <div class="popup-contact">
+                            <label for="email">
+                                <h5 class="form-heading">Email Address</h5>
+                            </label>
+                            <input type="text" placeholder="Email Address" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="popup-message">
+                        <label for="message">
+                            <h5 class="form-heading">Message</h5>
+                        </label>
+                        <textarea placeholder="" name="message" required></textarea>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://gerarddavis.com/thankyou">
+                    <input type="submit" value="Send" target="_blank">
+                </div>
+            </form>
+        </div>
         <section id="portfolio-page">
             <div class="content-wrapper">
                 <h2>Portfolio</h2>
@@ -158,7 +192,7 @@
                 </a>
             </div>
         </section>
-        <footer>
+        <footer id="contact">
             <div id="footer-wrapper">
                 <h3>Let's create something awesome, together.</h3>
                 <div id="contacts">
@@ -178,9 +212,9 @@
             </div>
         </footer>
 
-        <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/portfoliocontact.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
