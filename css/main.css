@@ -620,21 +620,24 @@ section {
   margin: 0 0 10px;
 }
 #portfolio-page a:nth-child(1) {
-  background-color: #e6eef2;
+  background-color: #f0f0f0;
 }
 #portfolio-page a:nth-child(2) {
-  background-color: #f0f0f0;
+  background-color: #e6eef2;
 }
 #portfolio-page a:nth-child(3) {
-  background-color: #e6eef2;
-}
-#portfolio-page a:nth-child(4) {
   background-color: #f0f0f0;
 }
-#portfolio-page a:nth-child(5) {
+#portfolio-page a:nth-child(4) {
   background-color: #e6eef2;
 }
+#portfolio-page a:nth-child(5) {
+  background-color: #f0f0f0;
+}
 #portfolio-page a:nth-child(6) {
+  background-color: #e6eef2;
+}
+#portfolio-page a:nth-child(7) {
   background-color: #f0f0f0;
 }
 #portfolio-page a {
@@ -644,6 +647,7 @@ section {
   border-bottom: solid 2px #fff;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 #portfolio-page a:first-of-type {
   margin-top: 0;
@@ -685,6 +689,107 @@ section {
   font-family: "Syne", sans-serif;
 }
 
+@media only screen and (min-width: 768px) {
+  #portfolio-page article {
+    padding: 20px 0 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #portfolio-page a:nth-child(1) article {
+    flex-flow: row-reverse wrap;
+  }
+  #portfolio-page a:nth-child(1) article .portfolio-text {
+    margin: 0 20px 0 0;
+    text-align: right;
+  }
+  #portfolio-page a:nth-child(1) article .portfolio-text h3 {
+    text-align: right;
+  }
+  #portfolio-page a:nth-child(2) article {
+    flex-flow: row wrap;
+  }
+  #portfolio-page a:nth-child(2) article .portfolio-text {
+    margin: 0 0 0 20px;
+    text-align: left;
+  }
+  #portfolio-page a:nth-child(2) article .portfolio-text h3 {
+    text-align: left;
+  }
+  #portfolio-page a:nth-child(3) article {
+    flex-flow: row-reverse wrap;
+  }
+  #portfolio-page a:nth-child(3) article .portfolio-text {
+    margin: 0 20px 0 0;
+    text-align: right;
+  }
+  #portfolio-page a:nth-child(3) article .portfolio-text h3 {
+    text-align: right;
+  }
+  #portfolio-page a:nth-child(4) article {
+    flex-flow: row wrap;
+  }
+  #portfolio-page a:nth-child(4) article .portfolio-text {
+    margin: 0 0 0 20px;
+    text-align: left;
+  }
+  #portfolio-page a:nth-child(4) article .portfolio-text h3 {
+    text-align: left;
+  }
+  #portfolio-page a:nth-child(5) article {
+    flex-flow: row-reverse wrap;
+  }
+  #portfolio-page a:nth-child(5) article .portfolio-text {
+    margin: 0 20px 0 0;
+    text-align: right;
+  }
+  #portfolio-page a:nth-child(5) article .portfolio-text h3 {
+    text-align: right;
+  }
+  #portfolio-page a:nth-child(6) article {
+    flex-flow: row wrap;
+  }
+  #portfolio-page a:nth-child(6) article .portfolio-text {
+    margin: 0 0 0 20px;
+    text-align: left;
+  }
+  #portfolio-page a:nth-child(6) article .portfolio-text h3 {
+    text-align: left;
+  }
+  #portfolio-page a:nth-child(7) article {
+    flex-flow: row-reverse wrap;
+  }
+  #portfolio-page a:nth-child(7) article .portfolio-text {
+    margin: 0 20px 0 0;
+    text-align: right;
+  }
+  #portfolio-page a:nth-child(7) article .portfolio-text h3 {
+    text-align: right;
+  }
+
+  .portfolio-screenshot {
+    width: 40%;
+  }
+  .portfolio-screenshot img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .portfolio-text {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .portfolio-text h3 {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #portfolio-page h2 {
+    margin: 15px 0 25px;
+  }
+  #portfolio-page .portfolio-text {
+    width: 600px;
+  }
+}
 h1 {
   font-family: "Syne", sans-serif;
   text-transform: uppercase;
