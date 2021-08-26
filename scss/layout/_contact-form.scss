@@ -90,12 +90,13 @@ textarea {
   
 input[type=submit] {
     width: 150px;
-    padding: 15px 0;
+    padding: 10px 0;
     color: #fff;
     background-color: #004372;
     border-radius: 5px;
     border: solid 3px #fff;
     transition: .1s;
+    margin-top: 10px;
     text-transform: uppercase;
     font : {
         family: $syne;
@@ -180,5 +181,6 @@ input[type=submit] {
       input[type=submit] {
         width: 200px;
         padding: 15px 0;
+        margin-top: 25px;
       }
 }
