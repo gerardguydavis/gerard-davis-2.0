@@ -18,12 +18,22 @@ email.addEventListener("click", function () {
     }
 });
 
+document.addEventListener("keydown", function (e) {
+    if (e.key == "Escape") {
+        closeWindow();
+    }
+})
+
 closeButton.addEventListener("click", function () {
+    closeWindow();
+});
+
+function closeWindow() {
     if (popup.classList.contains("open")) {
         popup.classList.remove("open");
         popup.classList.add("hide");
     }
-});
+}
 
 //CAROUSEL
 const prevBtn = document.querySelector(".prevBtn");
