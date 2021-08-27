@@ -78,7 +78,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background-color: #e6eef2;
+  background-color: rgba(230, 238, 242, 0.95);
   border: solid 3px #004372;
   border-radius: 10px;
   z-index: 20;
@@ -138,6 +138,7 @@ h1 {
 input[name=name],
 input[name=email] {
   width: 100%;
+  padding: 5px 0 5px 5px;
 }
 
 input,
@@ -150,6 +151,7 @@ textarea {
   width: 100%;
   overflow-y: scroll;
   resize: none;
+  padding: 5px;
 }
 
 input[type=submit] {
@@ -224,7 +226,7 @@ input[type=submit]:active {
   }
 
   .popup-contact {
-    width: 48%;
+    width: 45%;
   }
 
   input[name=name],
@@ -651,6 +653,7 @@ section {
   display: flex;
   justify-content: center;
   width: 100%;
+  transition: 0.2s;
 }
 #portfolio-page a:first-of-type {
   margin-top: 0;
@@ -660,6 +663,7 @@ section {
 }
 #portfolio-page a:hover {
   background-color: #e0ecff;
+  transition: 0.2s;
 }
 #portfolio-page a:hover h3 {
   text-decoration: underline;
@@ -1136,7 +1140,7 @@ h1 {
     padding: 20px 30px;
     overflow-y: unset;
   }
-  .carousel-text p {
+  .carousel-text .slide-text-body {
     height: 175px;
   }
 }
@@ -1161,7 +1165,7 @@ h1 {
     width: 50%;
     padding: 50px;
   }
-  .carousel-text p {
+  .carousel-text .slide-text-body {
     height: 250px;
   }
 }
@@ -1182,7 +1186,7 @@ h1 {
     width: 275px;
   }
   to {
-    height: 580px;
+    height: 600px;
   }
 }
 @keyframes fade {
@@ -1203,7 +1207,7 @@ h1 {
       width: 600px;
     }
     to {
-      height: 610px;
+      height: 630px;
     }
   }
 }

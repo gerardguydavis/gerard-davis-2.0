@@ -13,8 +13,8 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: #e6eef2;
-    border: solid 3px #004372;
+    background-color: rgba(230,238,242, .95);
+    border: solid 3px $headerblue;
     border-radius: 10px;
     z-index: 20;
     padding: 10px;
@@ -74,7 +74,7 @@
 input[name=name],
 input[name=email] {
     width: 100%;
-}
+    padding: 5px 0 5px 5px;}
   
 input,
 textarea {
@@ -86,6 +86,7 @@ textarea {
     width: 100%;
     overflow-y: scroll;
     resize: none;
+    padding: 5px;
 }
   
 input[type=submit] {
@@ -165,7 +166,7 @@ input[type=submit] {
       }
       
       .popup-contact {
-        width: 48%;
+        width: 45%;
       }
       
       input[name=name],
