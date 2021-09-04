@@ -300,6 +300,12 @@ footer {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transition: 0.2s;
+}
+#email:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  cursor: pointer;
 }
 #email img {
   padding: 0 10px 0 0;
@@ -311,6 +317,13 @@ footer {
   justify-content: space-between;
   width: 300px;
   padding: 40px 0 0;
+}
+#socials a {
+  transition: 0.2s;
+}
+#socials a:hover {
+  transform: scale(1.15);
+  transition: 0.2s;
 }
 
 /*==========================
@@ -327,23 +340,10 @@ footer {
   }
   #contacts #email {
     width: 320px;
-    transition: 0.2s;
-  }
-  #contacts #email:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
-    cursor: pointer;
   }
 
   #socials {
     padding: 0;
-  }
-  #socials a {
-    transition: 0.2s;
-  }
-  #socials a:hover {
-    transform: scale(1.15);
-    transition: 0.2s;
   }
 }
 /*==========================
@@ -832,7 +832,7 @@ h1 {
   MOBILE
 ==========================*/
 #skills {
-  background-color: #83c5d6;
+  background-color: #74b2c2;
   border-top: solid 2px #fff;
   border-bottom: solid 2px #fff;
   color: #fff;
@@ -1013,7 +1013,7 @@ h1 {
 }
 .carousel-slide a:hover,
 #more:hover {
-  background-color: #c9c9c9;
+  background-color: #f0f0f0;
   transition: 0.2s;
 }
 
@@ -1107,7 +1107,7 @@ h1 {
   height: 15px;
   width: 15px;
   margin: 0 5px 0;
-  background-color: #83c5d6;
+  background-color: #74b2c2;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.2s ease;
