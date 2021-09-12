@@ -33,7 +33,8 @@
         weight: 700;
     }
     &:hover {
-        background-color: #f0f0f0;
+        color: $headerblue;
+        border: solid 2px $headerblue;
         transition: .2s;
     }
 }

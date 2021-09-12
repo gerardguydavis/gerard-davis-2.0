@@ -21,10 +21,19 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Kameron:wght@400;700&display=swap"
     rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-422ERFYJYE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-422ERFYJYE');
+  </script>
 </head>
 
 <body>
@@ -55,7 +64,7 @@
     </div>
     <div class="popup hide">
       <form action="https://formsubmit.co/gerard@gerarddavis.com" method="POST">
-        <span class="close">X</span>
+        <span class="close">&times;</span>
         <h2>Let's talk!</h2>
         <p>Feel free to contact me with the sterile but obligatory form below, or send an email to <a
             href="mailto:gerard@gerarddavis.com">gerard@gerarddavis.com</a>.</p>
@@ -197,6 +206,42 @@
             </div>
             <div class="carousel-slide" id="port2">
               <figure class="carousel-img">
+                <img src="img/carousel/officelite.png" alt="Officelite project" class="carousel-thumb">
+                <img src="img/officelite.png" alt="Officelite project" class="mobile-thumb">
+              </figure>
+              <div class="carousel-text">
+                <h4 class="fade">Officelite</h4>
+                <div class="slide-text-body fade">
+                  <p>Officelite is a landing page for a coming product launch. It was built primarily with SCSS.
+                    I really wanted to focus on nesting and a
+                    solid responsive layout here; it does include
+                    JavaScript functionality for a countdown timer and a custom select menu on the product's sign-up
+                    page.
+                  <p><strong>Languages:</strong> HTML, SCSS, JavaScript</p>
+                </div>
+                <a href="https://gerarddavis.com/portfolio/officelite" target="_blank">Live Site</a>
+              </div>
+            </div>
+            <div class="carousel-slide" id="port3">
+              <figure class="carousel-img">
+                <img src="img/carousel/floorfiller.png" alt="FloorFiller project" class="carousel-thumb">
+                <img src="img/floorfiller.png" alt="FloorFiller project" class="mobile-thumb">
+              </figure>
+              <div class="carousel-text">
+                <h4 class="fade">FloorFiller.club</h4>
+                <div class="slide-text-body fade">
+                  <p>FloorFiller.club is an in progress website created to showcase custom content for the
+                    open-source rhythm game, StepMania. This single-page website features interactive cards for each
+                    downloadable song in the Song List menu.</p>
+                  <p><em>(Note: This site is still a work in progress and can be a little buggy on Chromium browsers. It
+                      runs best when hardware acceleration is disabled.)</em></p>
+                  <p><strong>Languages:</strong> HTML, CSS, JavaScript</p>
+                </div>
+                <a href="https://floorfiller.club" target="_blank">Live Site</a>
+              </div>
+            </div>
+            <div class="carousel-slide" id="port4">
+              <figure class="carousel-img">
                 <img src="img/carousel/loopstudios.png" alt="Loopstudios project" class="carousel-thumb">
                 <img src="img/loopstudios.png" alt="Loopstudios project" class="mobile-thumb">
               </figure>
@@ -211,25 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-slide" id="port3">
-            <figure class="carousel-img">
-              <img src="img/carousel/floorfiller.png" alt="FloorFiller project" class="carousel-thumb">
-              <img src="img/floorfiller.png" alt="FloorFiller project" class="mobile-thumb">
-            </figure>
-            <div class="carousel-text">
-              <h4 class="fade">FloorFiller.club</h4>
-              <div class="slide-text-body fade">
-                <p>FloorFiller.club is an in progress website created to showcase custom content for the
-                  open-source rhythm game, StepMania. This single-page website features interactive cards for each
-                  downloadable song in the Song List menu.</p>
-                <p><em>(Note: This site is still a work in progress and can be a little buggy on Chromium browsers. It
-                    runs best when hardware acceleration is disabled.)</em></p>
-                <p><strong>Languages:</strong> HTML, CSS, JavaScript</p>
-              </div>
-              <a href="https://floorfiller.club" target="_blank">Live Site</a>
-            </div>
-          </div>
-          <div class="carousel-slide" id="port4">
+          <div class="carousel-slide" id="port5">
             <figure class="carousel-img">
               <img src="img/carousel/github-repo.png" alt="Github Repo project" class="carousel-thumb">
               <img src="img/github-repo.png" alt="Github Repo project" class="mobile-thumb">
@@ -244,22 +271,7 @@
               <a href="https://gerarddavis.com/portfolio/github-repo-gallery" target="_blank">Live Site</a>
             </div>
           </div>
-          <div class="carousel-slide" id="port5">
-            <figure class="carousel-img">
-              <img src="img/carousel/tetris.png" alt="Tetris The Cat project" class="carousel-thumb">
-              <img src="img/tetris-site.png" alt="Tetris The Cat project" class="mobile-thumb">
-            </figure>
-            <div class="carousel-text">
-              <h4 class="fade">Tetris The Cat</h4>
-              <div class="slide-text-body fade">
-                <p>This page was a quick exercise for myself in utilizing grid layouts, CSS animations, and
-                  expanding, scrollable divs. I was pleased with how it was turning out, so I turned it into a little
-                  profile for my big cat, Tetris.</p>
-                <p><strong>Languages:</strong> HTML, CSS</p>
-              </div>
-              <a href="https://gerarddavis.com/portfolio/tetris-the-cat" target="_blank">Live Site</a>
-            </div>
-          </div>
+
           <a class="nextBtn">❯</a>
         </div>
 
@@ -298,12 +310,12 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    ga('create', 'UA-194818946-1', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
 
 </html>

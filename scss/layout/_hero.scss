@@ -48,6 +48,9 @@
         &:active {
         background-color: $buttonclick;
         }
+        &:focus {
+            outline: none;
+        }
     }
 }
 /*==========================
